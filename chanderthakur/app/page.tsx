@@ -4,6 +4,7 @@ import Image from "next/image";
 import LottieAnimation from "@/components/ui/LottiePlayer";
 import { AppleCardsCarouselDemo } from "@/components/data/info";
 import { TimelineDemo } from "@/components/data/timelineData";
+import { MarqueeDemo } from "@/components/data/marquee";
 
 
 export default function Home() {
@@ -12,9 +13,10 @@ export default function Home() {
       <Example />
       <TimelineDemo/>
       <CarouselDemo />
-      
+      <MarqueeDemo/>
         <LottieAnimation />
         <AppleCardsCarouselDemo />
+        
         
     </>
   );
