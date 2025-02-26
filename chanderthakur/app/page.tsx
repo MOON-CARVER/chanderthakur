@@ -1,23 +1,32 @@
 import { CarouselDemo } from "@/components/ui/carousel";
 import Example from "@/components/ui/hero";
 import Image from "next/image";
-import LottieAnimation from "@/components/ui/LottiePlayer";
-import { AppleCardsCarouselDemo } from "@/components/data/info";
 import { TimelineDemo } from "@/components/data/timelineData";
-import { MarqueeDemo } from "@/components/data/marquee";
-
+import { DATA } from "@/components/data/projects";
+import { ProjectCard } from "@/components/ui/project-card";
+import LottiePlayer from "@/components/ui/LottiePlayer";
 
 export default function Home() {
   return (
     <>
       <Example />
-      <TimelineDemo/>
+      <TimelineDemo />
       <CarouselDemo />
-      <MarqueeDemo/>
-        <LottieAnimation />
-        <AppleCardsCarouselDemo />
-        
-        
+      <div className="max-w-[800px] mx-auto" > <LottiePlayer/> </div>
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+        {DATA.projects.map((project, id) => (
+          <ProjectCard
+            href={project.href}
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            dates={project.dates}
+            tags={project.technologies}
+            image={project.image}
+            video={project.video}
+          />
+        ))}
+      </div>
     </>
   );
 }
