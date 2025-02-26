@@ -98,11 +98,11 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "/videos/infoodsys.mp4",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
+      title: "3D Portfolio",
+      href: "https://chander-thakur-portfolio.vercel.app",
       dates: "June 2023 - Present",
       active: true,
       description:
@@ -120,7 +120,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://chander-thakur-portfolio.vercel.app",
           
         },
         {
@@ -130,7 +130,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "/videos/portfolio.mp4",
     },
     {
       title: "llm.report",
