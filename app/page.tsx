@@ -4,8 +4,9 @@ import { TimelineDemo } from "@/components/data/timelineData";
 import { DATA } from "@/components/data/projects";
 import { ProjectCard } from "@/components/ui/project-card";
 import LottiePlayer from "@/components/ui/LottiePlayer";
-import Instagram from "@/components/ui/Instagram";
+
 import { BentoGridSecondDemo } from "@/components/data/grid";
+import Instagram from "@/components/ui/Instagram";
 
 
 export default function Home() {
@@ -17,9 +18,7 @@ export default function Home() {
       <Instagram />
       <div className="max-w-[800px] mx-auto" > <LottiePlayer/> </div>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-      <h1>Instagram Video</h1>
-      <Instagram containerStyle={{ width: '500px', height: '500px', border: '1px solid black' }} />
-        {DATA.projects.map((project, id) => (
+        {DATA.projects.map((project) => (
           <ProjectCard
             href={project.href}
             key={project.title}
