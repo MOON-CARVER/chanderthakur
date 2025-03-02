@@ -1,26 +1,25 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image'; // Import the Image component
 
 const navigation = [
   { name: 'Github', href: 'https://github.com/MOON-CARVER' },
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/chander-thakur-42b250196/' },
   { name: 'Instagram', href: 'https://www.instagram.com/i_tsuk_ii/' },
   { name: 'Youtube', href: 'https://www.youtube.com/@Wasabi.Script' },
-]
+];
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
-          
-          </div>
+          <div className="flex lg:flex-1"></div>
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -38,8 +37,7 @@ export default function Example() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
@@ -47,9 +45,11 @@ export default function Example() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
-                  alt=""
+                <Image
                   src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  alt="Your Company Logo"
+                  width={32}
+                  height={32}
                   className="h-8 w-auto"
                 />
               </a>
@@ -103,9 +103,7 @@ export default function Example() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-
-          </div>
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
               Data to enrich your online business
@@ -141,5 +139,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }

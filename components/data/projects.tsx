@@ -98,7 +98,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "/videos/infoodsys.mp4",
+        "videos/infoodsys.mp4"
     },
     {
       title: "3D Portfolio",

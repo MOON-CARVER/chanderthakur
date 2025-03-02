@@ -16,7 +16,6 @@ interface Props {
   href?: string;
   description: string;
   dates: string;
-  tags: readonly string[];
   link?: string;
   image?: string;
   video?: string;
@@ -32,7 +31,6 @@ export function ProjectCard({
   href,
   description,
   dates,
-  tags,
   link,
   image,
   video,
