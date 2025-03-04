@@ -1,28 +1,15 @@
 
-import { HomeIcon, NotebookIcon } from "lucide-react";
-
-
 export const DATA = {
   
 
   projects: [
     {
-      title: "Chat Collect",
+      title: "InfoodSys",
       href: "https://chatcollect.com",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "An online Food ordering platform which also allows restaurants to manage orders and assign delivery drivers",
       links: [
         {
           type: "Website",
@@ -32,7 +19,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "videos/infoodsys.mp4"
+        "/videos/infoodsys.mp4"
     },
     {
       title: "3D Portfolio",
@@ -41,16 +28,7 @@ export const DATA = {
       active: true,
       description:
         "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+      
       links: [
         {
           type: "Website",
