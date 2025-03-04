@@ -162,7 +162,7 @@ export function BentoGridSecondDemo() {
       {/* Smaller box with 1 animation */}
             <BentoGridItem
         title="Cloud Computing"
-        description="Dive into the transformative power of technology."
+        description="Several project on AWS"
         header={
           <div className="flex w-full h-full overflow-hidden">
             <LottiePlayer animationIndex={3} scale={1.3} />
@@ -174,7 +174,7 @@ export function BentoGridSecondDemo() {
       {/* Smaller box with 1 animation */}
       <BentoGridItem
         title="Android Development"
-        description="Discover the beauty of thoughtful and functional design."
+        description="experience in flutter android development framework"
         header={
           <div className="flex w-full h-full overflow-hidden">
             <LottiePlayer animationIndex={4} scale={1.3} />
@@ -186,7 +186,7 @@ export function BentoGridSecondDemo() {
       {/* Horizontally long box with 2 animations */}
       <BentoGridItem
         title="Frontend and Animation"
-        description="Experienced in building UIs with React and Flutter, and creating animations using After Effects."
+        description="Experienced in building UIs with React and Flutter, and editing using After Effects."
         header={
           <div className="flex  w-full h-full overflow-hidden">
             <LottiePlayer animationIndex={5} scale={1.3} />
