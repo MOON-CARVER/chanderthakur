@@ -7,9 +7,11 @@ import { BentoGridSecondDemo } from "@/components/data/grid";
 import Instagram from "@/components/ui/Instagram";
 
 
+
 export default function Home() {
   return (
     <>
+    
       <Example />
       <TimelineDemo />
       <BentoGridSecondDemo/>
