@@ -5,18 +5,12 @@ export const DATA = {
   projects: [
     {
       title: "InfoodSys",
-      href: "https://chatcollect.com",
+      href: "https://github.com/pythonandspring/Food-ordering",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
         "An online Food ordering platform which also allows restaurants to manage orders and assign delivery drivers",
-      links: [
-        {
-          type: "Website",
-          href: "https://chatcollect.com",
-          
-        },
-      ],
+      
       image: "",
       video:
         "/videos/infoodsys.mp4"
@@ -84,17 +78,6 @@ export const DATA = {
       active: true,
       description:
         "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
       links: [
         {
           type: "Website",
